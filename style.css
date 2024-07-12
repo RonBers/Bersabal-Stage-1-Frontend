@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+  font-family: Cardillac;
+  src: url(Cardillac/Cardillac-Medium.woff);
+}
+
+@font-face {
+  font-family: Cardillac-Italic;
+  src: url(Cardillac/Cardillac-LightItalic.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.avatar {
+  border-radius: 100%;
+  align-items: start;
+}
+
+.card-container {
+  background: #f7eee1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background: #cde2c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 15px;
+  box-shadow: 1px 5px 10px 0px rgb(200, 200, 200);
+}
+
+h2 {
+  font-family: Cardillac-Italic;
+  font-weight: light;
+  font-size: 56px;
+  color: #242c20;
+}
