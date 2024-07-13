@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="card-container">
-      <div class="card">
-        <img
-          src="https://reqres.in/img/faces/1-image.jpg"
-          alt=""
-          class="avatar"
-        />
-        <h4 class="id"><span>#</span>1</h4>
-        <h2>Bluth, George</h2>
+    <div class="container" id="container">
+      <div class="toggle-darkmode" id="darkmode-toggle">
+        <label class="toggle-switch">
+          <input type="checkbox" id="darkmode-toggle-btn" />
+          <span class="toggle-track"></span>
+          <span class="toggle-thumb"></span>
+        </label>
+      </div>
+
+      <div class="card-container" id="card-container">
+        <div class="card active" id="default-card"></div>
+        <div class="card" id="custom-card"></div>
+      </div>
+
+      <div>
+        <button class="magic" id="magic-btn">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </button>
       </div>
     </div>
     <script src="script.js"></script>
